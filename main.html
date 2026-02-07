@@ -1,16 +1,68 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Flexbox Layout Creation</title>
+
+  <style>
+    
+    .holder {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .item {
+      width: 120px;
+      height: 120px;
+      font-size: 48px;
+      font-weight: bold;
+      color: black;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+  </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <h2>Flexbox Layout Creation</h2>
+
+  <div class="holder">
+    <div class="item green">3</div>
+    <div class="item red">1</div>
+    <div class="item blue">2</div>
+  </div>
+
+  <h3>For flex-wrap illustration:</h3>
+
+  <!-- Flex Wrap Example -->
+  <div class="holder">
+    <div class="item green">3</div>
+    <div class="item green">4</div>
+    <div class="item green">5</div>
+    <div class="item green">6</div>
+    <div class="item green">7</div>
+    <div class="item red">1</div>
+    <div class="item blue">2</div>
+  </div>
 
 </body>
-
 </html>
